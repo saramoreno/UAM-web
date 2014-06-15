@@ -1,0 +1,25 @@
+/*------------------------------------------*\
+    ASIDE
+\*------------------------------------------*/
+
+aside {
+  padding-left: 2em;
+  vertical-align: top;
+  p {
+    margin-bottom: 1em;
+  }
+
+  .sidebar-list {
+    .title {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 1em 0 .5em 0;
+      list-style-type: none;
+      margin-left: 0;
+    }
+    li {
+      list-style-type: square;
+      margin-left: 1.5em;
+    }
+  }
+}

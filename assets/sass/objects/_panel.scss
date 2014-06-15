@@ -1,0 +1,12 @@
+/*------------------------------------------*\
+    PANEL
+\*------------------------------------------*/
+
+.panel {
+  background: #fff;
+  padding: 1em;
+  @include border-radius(5px);
+  -webkit-box-shadow: 1px 1px 0 #f5f7f7;
+  -moz-box-shadow: 1px 1px 0 #f5f7f7;
+  box-shadow: 1px 1px 0 #f5f7f7;
+}
