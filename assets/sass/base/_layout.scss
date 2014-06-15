@@ -1,0 +1,107 @@
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+.wrapper{
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow:hidden;
+  padding-top: .7em;
+  height: auto;
+  min-height: 100%;
+  background: #fff;
+}
+
+.inner-wrapper {
+  padding: 1em;
+}
+
+.main-content {
+  clear:both;
+}
+
+section, article {
+  margin: 1.25em 0;
+}
+
+.nmt {
+  margin-top: 0;
+}
+
+.nmb {
+  margin-bottom: 0;
+}
+
+.mt {
+  margin-top: 1.25em;
+}
+
+.mb {
+  margin-bottom: 1.25em;
+}
+
+.ml {
+  margin-left: 1.5em;
+}
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+/* Grid Container */
+.g {
+	letter-spacing: -0.35em;
+	> *{
+		letter-spacing: normal;
+	}
+}
+
+/* Grid Item */
+.gi {
+	letter-spacing: normal;
+
+	@include media-query(lap-and-up){
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+// GRIDS WIDTH MARGINS
+
+.mr {
+  margin-right: 1%;
+}
+
+.ml {
+  margin-left: 1%;
+}
+
+.half-width {
+  width: 49%;
+}
+
+.forty-width {
+  width: 39%;
+}
+
+.forty-width {
+  width: 39%;
+}
+
+.sixty-width {
+  width: 59%;
+}
+
+.sixty-width {
+  width: 59%;
+}
+
+.onethird-width {
+  width: 32.33%;
+}
+
+.eighty-width {
+  width: 79%;
+}

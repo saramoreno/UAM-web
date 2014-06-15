@@ -1,0 +1,36 @@
+/*------------------------------------------*\
+    Post-box
+\*------------------------------------------*/
+
+.post-box {
+  border-bottom: 1px solid #ccc;
+
+  figure {
+    display: inline-block;
+    width: 35%;
+    height: 300px;
+    margin: 2em 0;
+    vertical-align: top;
+    overflow: hidden;
+
+    img {
+      min-width: 100%;
+    }
+  }
+
+  .post-text {
+    display: inline-block;
+    width: 55%;
+    margin-top: 2em;
+    padding-left: 1em;
+    p {
+      max-height: 270px;
+      overflow: hidden;
+    }
+  }
+
+  .more {
+    display: block;
+    margin-top: 1em;
+  }
+}

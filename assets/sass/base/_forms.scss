@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+textarea{
+  -webkit-appearance: none;
+  @include border-radius(0);
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+.basic-form {
+  background: $colorForm;
+  padding: 0 0.625em;
+
+  @include border-radius(3px);
+
+  input {
+    border: none;
+    background-color: $colorForm;
+    outline: none;
+  }
+}
