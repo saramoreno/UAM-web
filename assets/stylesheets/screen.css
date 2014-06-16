@@ -156,90 +156,95 @@ p {
 }
 
 /* line 46, ../sass/base/_base.scss */
+.big-p {
+  line-height: 2em;
+}
+
+/* line 50, ../sass/base/_base.scss */
 .normal-text {
   color: #65666b;
 }
 
 /* Inline Content */
-/* line 52, ../sass/base/_base.scss */
+/* line 56, ../sass/base/_base.scss */
 a {
   color: #00a55b;
   text-decoration: none;
 }
-/* line 56, ../sass/base/_base.scss */
+/* line 60, ../sass/base/_base.scss */
 a:active {
   outline: none;
 }
-/* line 60, ../sass/base/_base.scss */
+/* line 64, ../sass/base/_base.scss */
 a:focus {
   -moz-outline-syle: none;
 }
-/* line 63, ../sass/base/_base.scss */
+/* line 67, ../sass/base/_base.scss */
 a:hover {
   color: #333;
 }
 
-/* line 68, ../sass/base/_base.scss */
+/* line 72, ../sass/base/_base.scss */
 p a {
   color: #f5f6f7;
 }
 
-/* line 73, ../sass/base/_base.scss */
+/* line 77, ../sass/base/_base.scss */
 .centered {
   text-align: center;
 }
 
-/* line 76, ../sass/base/_base.scss */
+/* line 80, ../sass/base/_base.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 79, ../sass/base/_base.scss */
+/* line 83, ../sass/base/_base.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 84, ../sass/base/_base.scss */
+/* line 88, ../sass/base/_base.scss */
 .left {
   float: left;
 }
 
-/* line 87, ../sass/base/_base.scss */
+/* line 91, ../sass/base/_base.scss */
 .right {
   float: right;
 }
 
-/* line 90, ../sass/base/_base.scss */
+/* line 94, ../sass/base/_base.scss */
 .center {
   margin: 0 auto;
 }
 
-/* line 93, ../sass/base/_base.scss */
+/* line 97, ../sass/base/_base.scss */
 .no-float {
   float: none;
 }
 
-/* line 97, ../sass/base/_base.scss */
+/* line 101, ../sass/base/_base.scss */
 .inline-content {
   display: table-cell;
 }
 
-/* line 101, ../sass/base/_base.scss */
+/* line 105, ../sass/base/_base.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 107, ../sass/base/_base.scss */
+/* line 111, ../sass/base/_base.scss */
 .t-thin {
   font-weight: 100;
 }
 
-/* line 111, ../sass/base/_base.scss */
+/* line 115, ../sass/base/_base.scss */
 .t-bold {
   font-weight: 700;
 }
 
-/* line 115, ../sass/base/_base.scss */
+/* line 119, ../sass/base/_base.scss */
 .t-code {
   font-family: "Cousine";
   opacity: 0.6;
@@ -387,7 +392,7 @@ h4, .delta {
 
 /* line 35, ../sass/base/_headings.scss */
 .big-heading {
-  font-size: 2em;
+  font-size: 30px;
   font-weight: 200;
   margin: 1.5em 0 1.5em 0;
 }
@@ -432,31 +437,36 @@ h4, .delta {
 }
 
 /* line 21, ../sass/base/_layout.scss */
+.big-inner-wrapper {
+  padding: 2em 8em 6em 8em;
+}
+
+/* line 25, ../sass/base/_layout.scss */
 .main-content {
   clear: both;
 }
 
-/* line 25, ../sass/base/_layout.scss */
+/* line 29, ../sass/base/_layout.scss */
 .nmt {
   margin-top: 0;
 }
 
-/* line 29, ../sass/base/_layout.scss */
+/* line 33, ../sass/base/_layout.scss */
 .nmb {
   margin-bottom: 0;
 }
 
-/* line 33, ../sass/base/_layout.scss */
+/* line 37, ../sass/base/_layout.scss */
 .mt {
   margin-top: 1.25em;
 }
 
-/* line 37, ../sass/base/_layout.scss */
+/* line 41, ../sass/base/_layout.scss */
 .mb {
   margin-bottom: 1.25em;
 }
 
-/* line 41, ../sass/base/_layout.scss */
+/* line 45, ../sass/base/_layout.scss */
 .ml {
   margin-left: 1.5em;
 }
@@ -465,46 +475,41 @@ h4, .delta {
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 50, ../sass/base/_layout.scss */
+/* line 54, ../sass/base/_layout.scss */
 .g {
   letter-spacing: -0.35em;
 }
-/* line 52, ../sass/base/_layout.scss */
+/* line 56, ../sass/base/_layout.scss */
 .g > * {
   letter-spacing: normal;
 }
 
 /* Grid Item */
-/* line 58, ../sass/base/_layout.scss */
+/* line 62, ../sass/base/_layout.scss */
 .gi {
   letter-spacing: normal;
 }
 @media only screen and (min-width: 50em) {
-  /* line 58, ../sass/base/_layout.scss */
+  /* line 62, ../sass/base/_layout.scss */
   .gi {
     display: inline-block;
     vertical-align: top;
   }
 }
 
-/* line 69, ../sass/base/_layout.scss */
+/* line 73, ../sass/base/_layout.scss */
 .mr {
   margin-right: 1%;
 }
 
-/* line 73, ../sass/base/_layout.scss */
+/* line 77, ../sass/base/_layout.scss */
 .ml {
   margin-left: 1%;
 }
 
-/* line 77, ../sass/base/_layout.scss */
+/* line 81, ../sass/base/_layout.scss */
 .half-width {
   width: 49%;
-}
-
-/* line 81, ../sass/base/_layout.scss */
-.forty-width {
-  width: 39%;
 }
 
 /* line 85, ../sass/base/_layout.scss */
@@ -513,8 +518,8 @@ h4, .delta {
 }
 
 /* line 89, ../sass/base/_layout.scss */
-.sixty-width {
-  width: 59%;
+.forty-width {
+  width: 39%;
 }
 
 /* line 93, ../sass/base/_layout.scss */
@@ -523,11 +528,16 @@ h4, .delta {
 }
 
 /* line 97, ../sass/base/_layout.scss */
+.sixty-width {
+  width: 59%;
+}
+
+/* line 101, ../sass/base/_layout.scss */
 .onethird-width {
   width: 32.33%;
 }
 
-/* line 101, ../sass/base/_layout.scss */
+/* line 105, ../sass/base/_layout.scss */
 .eighty-width {
   width: 79%;
 }
