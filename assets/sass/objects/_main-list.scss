@@ -1,0 +1,14 @@
+/*------------------------------------------*\
+    MAIN LIST
+\*------------------------------------------*/
+
+.main-list {
+  width: 47%;
+  display: inline-block;
+
+  li {
+    padding: .5em 0;
+    list-style-type: square;
+    margin-left: 1em;
+  }
+}

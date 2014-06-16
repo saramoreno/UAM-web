@@ -873,17 +873,16 @@ aside .sidebar-list li {
 }
 
 /*------------------------------------------*\
-    PANEL
+    MAIN LIST
 \*------------------------------------------*/
-/* line 5, ../sass/objects/_panel.scss */
-.panel {
-  background: #fff;
-  padding: 1em;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  -webkit-box-shadow: 1px 1px 0 #f5f7f7;
-  -moz-box-shadow: 1px 1px 0 #f5f7f7;
-  box-shadow: 1px 1px 0 #f5f7f7;
+/* line 5, ../sass/objects/_main-list.scss */
+.main-list {
+  width: 47%;
+  display: inline-block;
+}
+/* line 9, ../sass/objects/_main-list.scss */
+.main-list li {
+  padding: .5em 0;
+  list-style-type: square;
+  margin-left: 1em;
 }
