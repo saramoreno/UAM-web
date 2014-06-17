@@ -693,8 +693,9 @@ header .title .subtitle {
 .post-box {
   border-bottom: 1px solid #e7e9ec;
   padding: .5em 1em 1em 0;
+  margin-bottom: 2em;
 }
-/* line 9, ../sass/objects/_post-box.scss */
+/* line 10, ../sass/objects/_post-box.scss */
 .post-box figure {
   display: inline-block;
   width: 35%;
@@ -703,34 +704,34 @@ header .title .subtitle {
   vertical-align: top;
   overflow: hidden;
 }
-/* line 17, ../sass/objects/_post-box.scss */
+/* line 18, ../sass/objects/_post-box.scss */
 .post-box figure img {
   min-width: 100%;
 }
-/* line 22, ../sass/objects/_post-box.scss */
+/* line 23, ../sass/objects/_post-box.scss */
 .post-box .small {
   font-size: 13px;
   font-size: 0.92857rem;
 }
-/* line 26, ../sass/objects/_post-box.scss */
+/* line 27, ../sass/objects/_post-box.scss */
 .post-box .post-text {
   display: inline-block;
   width: 55%;
   margin-top: 2em;
   padding-left: 1em;
 }
-/* line 31, ../sass/objects/_post-box.scss */
+/* line 32, ../sass/objects/_post-box.scss */
 .post-box .post-text p {
   max-height: 270px;
   overflow: hidden;
 }
 
-/* line 38, ../sass/objects/_post-box.scss */
+/* line 39, ../sass/objects/_post-box.scss */
 .more {
   display: block;
   margin-top: 1em;
 }
-/* line 42, ../sass/objects/_post-box.scss */
+/* line 43, ../sass/objects/_post-box.scss */
 .more .icon {
   padding-left: .3em;
   position: relative;
@@ -875,14 +876,15 @@ aside .sidebar-list li {
 /*------------------------------------------*\
     MAIN LIST
 \*------------------------------------------*/
-/* line 5, ../sass/objects/_main-list.scss */
-.main-list {
-  width: 47%;
-  display: inline-block;
-}
-/* line 9, ../sass/objects/_main-list.scss */
+/* line 6, ../sass/objects/_main-list.scss */
 .main-list li {
   padding: .5em 0;
   list-style-type: square;
   margin-left: 1em;
+}
+
+/* line 13, ../sass/objects/_main-list.scss */
+.list-sm {
+  display: inline-block;
+  width: 47%;
 }
