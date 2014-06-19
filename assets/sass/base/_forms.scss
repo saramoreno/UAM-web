@@ -43,15 +43,32 @@ input[type="radio"] {
     $SPECIFIC FORMS
 \*------------------------------------*/
 
-.basic-form {
-  background: $colorForm;
-  padding: 0 0.625em;
+.main-form {
+  clear: both;
 
-  @include border-radius(3px);
-
-  input {
-    border: none;
+  input, textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid lighten(#ccc, 10%);
     background-color: $colorForm;
     outline: none;
+    @include border-radius(5px);
+    padding: .7em 1em;
+    margin: 1em 0;
+  }
+
+  button {
+    background: $secondaryBg;
+    color: #fff;
+    border: none;
+    padding: .5em;
+    outline: none;
+    @include border-radius(5px);
+    border-bottom: 2px solid darken($secondaryBg, 10%);
+    cursor: pointer;
+
+    &:hover {
+      background: darken($secondaryBg, 10%);
+    }
   }
 }

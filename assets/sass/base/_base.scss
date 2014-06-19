@@ -1,10 +1,10 @@
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
-@include font-face ("Open-Sans", "OpenSans-Bold.ttf", 700);
-@include font-face ("Open-Sans", "OpenSans-Light.ttf", 300);
-@include font-face ("Open-Sans", "OpenSans-Bold.ttf", 700);
-@include font-face ("Open-Sans", "OpenSans-Regular.ttf", 400);
+@include font-face ("Open-Sans", "OpenSans-Bold", 700);
+@include font-face ("Open-Sans", "OpenSans-Light", 300);
+@include font-face ("Open-Sans", "OpenSans-Bold", 700);
+@include font-face ("Open-Sans", "OpenSans-Regular", 400);
 
 /* Tipos */
 
@@ -39,7 +39,7 @@ h1,h2,h2,h3,h4,h6{
 }
 
 p{
-  line-height: 1.3;
+  line-height: 1.8;
 }
 
 .big-p {
@@ -69,7 +69,7 @@ a{
 }
 
 p a{
-  color: $primary;
+  color: $secondaryBg;
 }
  
 //text align

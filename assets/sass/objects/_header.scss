@@ -3,14 +3,16 @@
 \*------------------------------------------*/
 
 header {
-  .title {
-    padding-bottom: 2em;
-    h1 {
-      font-weight: 400;
-      line-height: 1.6em;
+.title {
+  margin-bottom: 2em;
+  width: 70%;
+
+  a {
+    color: #333;
+
+   &:hover {
+    color: $secondaryBg;
     }
-    .subtitle {
-      width: 60%;
-    }
+   }
   }
 }

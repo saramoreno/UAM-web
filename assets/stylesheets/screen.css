@@ -79,9 +79,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 \*------------------------------------*/
 @font-face {
   font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Bold.ttf.otf");
+  src: url("../fonts/OpenSans-Bold.otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Bold.ttf.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.ttf.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf.ttf") format("truetype"), url("../fonts/OpenSans-Bold.ttf.svg#Open-Sans") format("svg");
+  src: url("../fonts/OpenSans-Bold.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#Open-Sans") format("svg");
   /* Legacy iOS */
   font-weight: 700;
   font-style: normal;
@@ -89,9 +89,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Light.ttf.otf");
+  src: url("../fonts/OpenSans-Light.otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Light.ttf.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.ttf.woff") format("woff"), url("../fonts/OpenSans-Light.ttf.ttf") format("truetype"), url("../fonts/OpenSans-Light.ttf.svg#Open-Sans") format("svg");
+  src: url("../fonts/OpenSans-Light.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.svg#Open-Sans") format("svg");
   /* Legacy iOS */
   font-weight: 300;
   font-style: normal;
@@ -99,9 +99,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Bold.ttf.otf");
+  src: url("../fonts/OpenSans-Bold.otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Bold.ttf.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.ttf.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf.ttf") format("truetype"), url("../fonts/OpenSans-Bold.ttf.svg#Open-Sans") format("svg");
+  src: url("../fonts/OpenSans-Bold.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#Open-Sans") format("svg");
   /* Legacy iOS */
   font-weight: 700;
   font-style: normal;
@@ -109,9 +109,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Regular.ttf.otf");
+  src: url("../fonts/OpenSans-Regular.otf");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Regular.ttf.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf.ttf") format("truetype"), url("../fonts/OpenSans-Regular.ttf.svg#Open-Sans") format("svg");
+  src: url("../fonts/OpenSans-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg#Open-Sans") format("svg");
   /* Legacy iOS */
   font-weight: 400;
   font-style: normal;
@@ -122,14 +122,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 13, ../sass/base/_base.scss */
 html {
   font-size: 87.5%;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
 }
 
 /* line 18, ../sass/base/_base.scss */
 body {
   background: #f5f6f7;
   color: #65666b;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-size: 100%;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
@@ -152,7 +152,7 @@ h1, h2, h2, h3, h4, h6 {
 
 /* line 41, ../sass/base/_base.scss */
 p {
-  line-height: 1.3;
+  line-height: 1.8;
 }
 
 /* line 45, ../sass/base/_base.scss */
@@ -168,7 +168,7 @@ p {
 /* Inline Content */
 /* line 55, ../sass/base/_base.scss */
 a {
-  color: #00a55b;
+  color: #1982d1;
   text-decoration: none;
 }
 /* line 59, ../sass/base/_base.scss */
@@ -186,7 +186,7 @@ a:hover {
 
 /* line 71, ../sass/base/_base.scss */
 p a {
-  color: #f5f6f7;
+  color: #1982d1;
 }
 
 /* line 76, ../sass/base/_base.scss */
@@ -309,19 +309,40 @@ input[type="radio"] {
     $SPECIFIC FORMS
 \*------------------------------------*/
 /* line 46, ../sass/base/_forms.scss */
-.basic-form {
-  background: #fcfcfd;
-  padding: 0 0.625em;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
+.main-form {
+  clear: both;
 }
-/* line 52, ../sass/base/_forms.scss */
-.basic-form input {
-  border: none;
+/* line 49, ../sass/base/_forms.scss */
+.main-form input, .main-form textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #e6e6e6;
   background-color: #fcfcfd;
   outline: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  padding: .7em 1em;
+  margin: 1em 0;
+}
+/* line 60, ../sass/base/_forms.scss */
+.main-form button {
+  background: #1982d1;
+  color: #fff;
+  border: none;
+  padding: .5em;
+  outline: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border-bottom: 2px solid #1466a3;
+  cursor: pointer;
+}
+/* line 70, ../sass/base/_forms.scss */
+.main-form button:hover {
+  background: #1466a3;
 }
 
 /*------------------------------------*\
@@ -399,16 +420,22 @@ h4, .delta {
 .big-heading {
   font-size: 30px;
   font-weight: 200;
-  margin: 1.5em 0 1.5em 0;
+  margin: .5em 0 1em 0;
 }
 
 /* line 41, ../sass/base/_headings.scss */
-.normal-heading {
-  font-size: 1.875em;
+.bold-heading {
   font-weight: 700;
+  font-size: 40px;
+  margin: .5em 0;
 }
 
-/* line 46, ../sass/base/_headings.scss */
+/* line 47, ../sass/base/_headings.scss */
+.normal-heading {
+  font-size: 1.875em;
+}
+
+/* line 51, ../sass/base/_headings.scss */
 .small-heading {
   font-size: 1.5em;
   font-weight: 400;
@@ -416,7 +443,7 @@ h4, .delta {
 }
 
 @media only screen and (max-width: 49.92857em) {
-  /* line 53, ../sass/base/_headings.scss */
+  /* line 58, ../sass/base/_headings.scss */
   .big-heading {
     font-size: 1.6em;
   }
@@ -628,7 +655,6 @@ ul, ol, dl, dd {
 img {
   border: 0;
   vertical-align: middle;
-  max-width: 100%;
   height: auto;
 }
 
@@ -680,16 +706,16 @@ table {
 \*------------------------------------------*/
 /* line 6, ../sass/objects/_header.scss */
 header .title {
-  padding-bottom: 2em;
+  margin-bottom: 2em;
+  width: 70%;
 }
-/* line 8, ../sass/objects/_header.scss */
-header .title h1 {
-  font-weight: 400;
-  line-height: 1.6em;
+/* line 10, ../sass/objects/_header.scss */
+header .title a {
+  color: #333;
 }
-/* line 12, ../sass/objects/_header.scss */
-header .title .subtitle {
-  width: 60%;
+/* line 13, ../sass/objects/_header.scss */
+header .title a:hover {
+  color: #1982d1;
 }
 
 /*------------------------------------------*\
@@ -702,47 +728,91 @@ header .title .subtitle {
   margin-bottom: 2em;
 }
 /* line 10, ../sass/objects/_post-box.scss */
+.post-box .post-title {
+  margin-bottom: 2em;
+}
+/* line 12, ../sass/objects/_post-box.scss */
+.post-box .post-title a h2 {
+  color: #333;
+}
+/* line 15, ../sass/objects/_post-box.scss */
+.post-box .post-title a h2:hover {
+  color: #1982d1;
+}
+/* line 21, ../sass/objects/_post-box.scss */
 .post-box figure {
   display: inline-block;
   width: 35%;
   height: 300px;
-  margin: 2em 0;
   vertical-align: top;
   overflow: hidden;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  box-shadow: 1px 1px 3px 2px #ccc;
 }
-/* line 18, ../sass/objects/_post-box.scss */
+/* line 30, ../sass/objects/_post-box.scss */
 .post-box figure img {
   min-width: 100%;
 }
-/* line 23, ../sass/objects/_post-box.scss */
+/* line 35, ../sass/objects/_post-box.scss */
 .post-box .small {
   font-size: 13px;
   font-size: 0.92857rem;
 }
-/* line 27, ../sass/objects/_post-box.scss */
+/* line 39, ../sass/objects/_post-box.scss */
 .post-box .post-text {
   display: inline-block;
   width: 55%;
-  margin-top: 2em;
   padding-left: 1em;
 }
-/* line 32, ../sass/objects/_post-box.scss */
+/* line 43, ../sass/objects/_post-box.scss */
 .post-box .post-text p {
   max-height: 270px;
   overflow: hidden;
+  line-height: 1.5em;
 }
 
-/* line 39, ../sass/objects/_post-box.scss */
+/* line 51, ../sass/objects/_post-box.scss */
 .more {
   display: block;
-  margin-top: 1em;
+  margin: 1em 0;
 }
-/* line 43, ../sass/objects/_post-box.scss */
+/* line 55, ../sass/objects/_post-box.scss */
 .more .icon {
   padding-left: .3em;
   position: relative;
   top: .15em;
   left: 0;
+}
+
+/* line 64, ../sass/objects/_post-box.scss */
+.post-entry figure {
+  width: 35%;
+  height: 300px;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  box-shadow: 1px 1px 3px 2px #ccc;
+}
+/* line 71, ../sass/objects/_post-box.scss */
+.post-entry figure.left {
+  margin: 0 2em 1.5em 0;
+}
+/* line 75, ../sass/objects/_post-box.scss */
+.post-entry figure.right {
+  margin: 1.5em 0 1.5em 2em;
+}
+/* line 79, ../sass/objects/_post-box.scss */
+.post-entry figure img {
+  min-width: 100%;
+}
+/* line 83, ../sass/objects/_post-box.scss */
+.post-entry p {
+  margin-bottom: 1em;
 }
 
 /*------------------------------------------*\

@@ -7,13 +7,25 @@
   padding: .5em 1em 1em 0;
   margin-bottom: 2em;
 
+  .post-title {
+    margin-bottom: 2em;
+    a h2 {
+      color: #333;
+
+      &:hover {
+        color: $secondaryBg;
+      }
+    }
+  }
+
   figure {
     display: inline-block;
     width: 35%;
     height: 300px;
-    margin: 2em 0;
     vertical-align: top;
     overflow: hidden;
+    @include border-radius(2px);
+    box-shadow: 1px 1px 3px 2px #ccc;
 
     img {
       min-width: 100%;
@@ -27,23 +39,48 @@
   .post-text {
     display: inline-block;
     width: 55%;
-    margin-top: 2em;
     padding-left: 1em;
     p {
       max-height: 270px;
       overflow: hidden;
+      line-height: 1.5em;
     }
   }
 }
 
 .more {
   display: block;
-  margin-top: 1em;
+  margin: 1em 0;
 
   .icon {
     padding-left: .3em;
     position: relative;
     top: .15em;
     left: 0;
+  }
+}
+
+.post-entry {
+  figure {
+    width: 35%;
+    height: 300px;
+    overflow: hidden;
+    @include border-radius(2px);
+    box-shadow: 1px 1px 3px 2px #ccc;
+    
+    &.left {
+      margin: 0 2em 1.5em 0;
+    }
+
+    &.right {
+      margin: 1.5em 0 1.5em 2em;
+    }
+
+    img {
+      min-width: 100%;
+    }
+  }
+  p {
+    margin-bottom: 1em;
   }
 }

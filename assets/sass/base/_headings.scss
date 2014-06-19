@@ -35,12 +35,17 @@ h4, .delta {
 .big-heading {
   font-size: 30px;
   font-weight: 200;
-  margin: 1.5em 0 1.5em 0;
+  margin: .5em 0 1em 0;
+}
+
+.bold-heading {
+  font-weight: 700;
+  font-size: 40px;
+  margin: .5em 0;
 }
 
 .normal-heading {
   font-size: 1.875em;
-  font-weight: 700;
 }
 
 .small-heading {
