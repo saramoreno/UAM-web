@@ -15,4 +15,10 @@ header {
     }
    }
   }
+
+  @include media-query(palm) {
+    .title{
+      width: 100%;
+    } 
+  }
 }

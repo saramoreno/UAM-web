@@ -11,7 +11,7 @@
     a {
       color: #fff;
       display: block;
-      padding: 1em 1em;
+      padding: 1em;
     }
     &:hover {
       background: lighten(#333, 10%);
@@ -20,5 +20,11 @@
   .active {
     font-weight: 700;
     background: lighten(#333, 10%);
+  }
+
+  @include media-query(palm) {
+    li a {
+      padding: .5em;
+    }
   }
 }

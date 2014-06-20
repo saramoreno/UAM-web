@@ -20,6 +20,10 @@
 
 .big-inner-wrapper {
   padding: 2em 8em 6em 8em;
+
+  @include media-query(palm) {
+    padding: 1em;
+  }
 }
 
 .main-content {

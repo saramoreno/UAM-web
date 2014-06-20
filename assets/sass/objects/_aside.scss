@@ -22,4 +22,9 @@ aside {
       margin-left: 1.5em;
     }
   }
+
+  @include media-query(palm) {
+    width: 100%;
+    display: block;
+  }
 }

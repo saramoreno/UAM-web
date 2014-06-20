@@ -17,4 +17,9 @@
 .list-sm {
   display: inline-block;
   width: 47%;
+
+   @include media-query(palm) {
+    width: 100%;
+    display: block;
+   }
 }
