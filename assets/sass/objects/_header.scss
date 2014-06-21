@@ -5,7 +5,10 @@
 header {
 .title {
   margin-bottom: 2em;
+  padding-right: 1em;
   width: 70%;
+  display: inline-block;
+  vertical-align: top;
 
   a {
     color: #333;
@@ -14,6 +17,12 @@ header {
     color: $secondaryBg;
     }
    }
+  }
+
+  .main-form {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
   }
 
   @include media-query(palm) {
