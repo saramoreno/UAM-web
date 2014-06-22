@@ -463,54 +463,53 @@ h4, .delta {
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: .7em;
   height: auto;
   min-height: 100%;
   background: #fff;
 }
 
-/* line 17, ../sass/base/_layout.scss */
+/* line 16, ../sass/base/_layout.scss */
 .inner-wrapper {
   padding: 2em;
 }
 
-/* line 21, ../sass/base/_layout.scss */
+/* line 20, ../sass/base/_layout.scss */
 .big-inner-wrapper {
   padding: 2em 8em 6em 8em;
 }
 @media only screen and (max-width: 49.92857em) {
-  /* line 21, ../sass/base/_layout.scss */
+  /* line 20, ../sass/base/_layout.scss */
   .big-inner-wrapper {
     padding: 1em;
   }
 }
 
-/* line 29, ../sass/base/_layout.scss */
+/* line 28, ../sass/base/_layout.scss */
 .main-content {
   clear: both;
 }
 
-/* line 33, ../sass/base/_layout.scss */
+/* line 32, ../sass/base/_layout.scss */
 .nmt {
   margin-top: 0;
 }
 
-/* line 37, ../sass/base/_layout.scss */
+/* line 36, ../sass/base/_layout.scss */
 .nmb {
   margin-bottom: 0;
 }
 
-/* line 41, ../sass/base/_layout.scss */
+/* line 40, ../sass/base/_layout.scss */
 .mt {
   margin-top: 1.25em;
 }
 
-/* line 45, ../sass/base/_layout.scss */
+/* line 44, ../sass/base/_layout.scss */
 .mb {
   margin-bottom: 1.25em;
 }
 
-/* line 49, ../sass/base/_layout.scss */
+/* line 48, ../sass/base/_layout.scss */
 .ml {
   margin-left: 1.5em;
 }
@@ -519,69 +518,69 @@ h4, .delta {
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 58, ../sass/base/_layout.scss */
+/* line 57, ../sass/base/_layout.scss */
 .g {
   letter-spacing: -0.35em;
 }
-/* line 60, ../sass/base/_layout.scss */
+/* line 59, ../sass/base/_layout.scss */
 .g > * {
   letter-spacing: normal;
 }
 
 /* Grid Item */
-/* line 66, ../sass/base/_layout.scss */
+/* line 65, ../sass/base/_layout.scss */
 .gi {
   letter-spacing: normal;
 }
 @media only screen and (min-width: 50em) {
-  /* line 66, ../sass/base/_layout.scss */
+  /* line 65, ../sass/base/_layout.scss */
   .gi {
     display: inline-block;
     vertical-align: top;
   }
 }
 
-/* line 77, ../sass/base/_layout.scss */
+/* line 76, ../sass/base/_layout.scss */
 .mr {
   margin-right: 1%;
 }
 
-/* line 81, ../sass/base/_layout.scss */
+/* line 80, ../sass/base/_layout.scss */
 .ml {
   margin-left: 1%;
 }
 
-/* line 85, ../sass/base/_layout.scss */
+/* line 84, ../sass/base/_layout.scss */
 .half-width {
   width: 49%;
 }
 
-/* line 89, ../sass/base/_layout.scss */
+/* line 88, ../sass/base/_layout.scss */
 .forty-width {
   width: 39%;
 }
 
-/* line 93, ../sass/base/_layout.scss */
+/* line 92, ../sass/base/_layout.scss */
 .forty-width {
   width: 39%;
 }
 
-/* line 97, ../sass/base/_layout.scss */
+/* line 96, ../sass/base/_layout.scss */
 .sixty-width {
   width: 59%;
 }
 
-/* line 101, ../sass/base/_layout.scss */
+/* line 100, ../sass/base/_layout.scss */
 .sixty-width {
   width: 59%;
 }
 
-/* line 105, ../sass/base/_layout.scss */
+/* line 104, ../sass/base/_layout.scss */
 .onethird-width {
   width: 32.33%;
 }
 
-/* line 109, ../sass/base/_layout.scss */
+/* line 108, ../sass/base/_layout.scss */
 .eighty-width {
   width: 79%;
 }
@@ -784,58 +783,60 @@ header .main-form {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   box-shadow: 1px 1px 3px 2px #ccc;
+  border: 4px solid #f5f6f7;
+  max-height: 500px;
 }
-/* line 30, ../sass/objects/_post-box.scss */
+/* line 32, ../sass/objects/_post-box.scss */
 .post-box figure img {
   min-width: 100%;
 }
-/* line 34, ../sass/objects/_post-box.scss */
+/* line 36, ../sass/objects/_post-box.scss */
 .post-box figure figcaption {
   font-size: 12px;
   font-size: 0.85714rem;
   background: #f5f6f7;
 }
-/* line 38, ../sass/objects/_post-box.scss */
+/* line 40, ../sass/objects/_post-box.scss */
 .post-box figure figcaption p {
   line-height: 1.3em;
   padding: .4em;
 }
-/* line 45, ../sass/objects/_post-box.scss */
+/* line 47, ../sass/objects/_post-box.scss */
 .post-box .small {
   font-size: 13px;
   font-size: 0.92857rem;
 }
-/* line 49, ../sass/objects/_post-box.scss */
+/* line 51, ../sass/objects/_post-box.scss */
 .post-box .post-text {
   display: inline-block;
   width: 55%;
   padding-left: 1em;
 }
-/* line 53, ../sass/objects/_post-box.scss */
+/* line 55, ../sass/objects/_post-box.scss */
 .post-box .post-text p {
   max-height: 270px;
   overflow: hidden;
   line-height: 1.5em;
 }
 @media only screen and (max-width: 49.92857em) {
-  /* line 61, ../sass/objects/_post-box.scss */
+  /* line 63, ../sass/objects/_post-box.scss */
   .post-box figure {
     display: block;
     margin: 1em auto;
     min-width: 250px;
   }
-  /* line 67, ../sass/objects/_post-box.scss */
+  /* line 69, ../sass/objects/_post-box.scss */
   .post-box .post-text {
     width: 100%;
   }
 }
 
-/* line 73, ../sass/objects/_post-box.scss */
+/* line 75, ../sass/objects/_post-box.scss */
 .more {
   display: block;
   margin: 1em 0;
 }
-/* line 77, ../sass/objects/_post-box.scss */
+/* line 79, ../sass/objects/_post-box.scss */
 .more .icon {
   padding-left: .3em;
   position: relative;
@@ -843,35 +844,47 @@ header .main-form {
   left: 0;
 }
 
-/* line 86, ../sass/objects/_post-box.scss */
+/* line 88, ../sass/objects/_post-box.scss */
 .post-entry figure {
   width: 35%;
-  height: 300px;
+  max-height: 500px;
   overflow: hidden;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   box-shadow: 1px 1px 3px 2px #ccc;
+  border: 4px solid #f5f6f7;
 }
-/* line 93, ../sass/objects/_post-box.scss */
+/* line 96, ../sass/objects/_post-box.scss */
+.post-entry figure figcaption {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  background: #f5f6f7;
+}
+/* line 100, ../sass/objects/_post-box.scss */
+.post-entry figure figcaption p {
+  line-height: 1.3em;
+  padding: .4em;
+}
+/* line 106, ../sass/objects/_post-box.scss */
 .post-entry figure.left {
   margin: 0 2em 1.5em 0;
 }
-/* line 97, ../sass/objects/_post-box.scss */
+/* line 110, ../sass/objects/_post-box.scss */
 .post-entry figure.right {
   margin: 1.5em 0 1.5em 2em;
 }
-/* line 101, ../sass/objects/_post-box.scss */
+/* line 114, ../sass/objects/_post-box.scss */
 .post-entry figure img {
   min-width: 100%;
 }
-/* line 105, ../sass/objects/_post-box.scss */
+/* line 118, ../sass/objects/_post-box.scss */
 .post-entry p {
   margin-bottom: 1em;
 }
 @media only screen and (max-width: 49.92857em) {
-  /* line 109, ../sass/objects/_post-box.scss */
+  /* line 122, ../sass/objects/_post-box.scss */
   .post-entry figure.left, .post-entry figure.right {
     float: none;
     display: block;
