@@ -21,7 +21,7 @@
   figure {
     display: inline-block;
     width: 35%;
-    height: 300px;
+    height: auto;
     vertical-align: top;
     overflow: hidden;
     @include border-radius(2px);
@@ -29,6 +29,16 @@
 
     img {
       min-width: 100%;
+    }
+
+    figcaption {
+      @include font-size(12);
+      background: #f5f6f7;
+
+      p {
+        line-height: 1.3em;
+        padding: .4em;
+      }
     }
   }
 

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -776,7 +776,7 @@ header .main-form {
 .post-box figure {
   display: inline-block;
   width: 35%;
-  height: 300px;
+  height: auto;
   vertical-align: top;
   overflow: hidden;
   -webkit-border-radius: 2px;
@@ -789,42 +789,53 @@ header .main-form {
 .post-box figure img {
   min-width: 100%;
 }
-/* line 35, ../sass/objects/_post-box.scss */
+/* line 34, ../sass/objects/_post-box.scss */
+.post-box figure figcaption {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  background: #f5f6f7;
+}
+/* line 38, ../sass/objects/_post-box.scss */
+.post-box figure figcaption p {
+  line-height: 1.3em;
+  padding: .4em;
+}
+/* line 45, ../sass/objects/_post-box.scss */
 .post-box .small {
   font-size: 13px;
   font-size: 0.92857rem;
 }
-/* line 39, ../sass/objects/_post-box.scss */
+/* line 49, ../sass/objects/_post-box.scss */
 .post-box .post-text {
   display: inline-block;
   width: 55%;
   padding-left: 1em;
 }
-/* line 43, ../sass/objects/_post-box.scss */
+/* line 53, ../sass/objects/_post-box.scss */
 .post-box .post-text p {
   max-height: 270px;
   overflow: hidden;
   line-height: 1.5em;
 }
 @media only screen and (max-width: 49.92857em) {
-  /* line 51, ../sass/objects/_post-box.scss */
+  /* line 61, ../sass/objects/_post-box.scss */
   .post-box figure {
     display: block;
     margin: 1em auto;
     min-width: 250px;
   }
-  /* line 57, ../sass/objects/_post-box.scss */
+  /* line 67, ../sass/objects/_post-box.scss */
   .post-box .post-text {
     width: 100%;
   }
 }
 
-/* line 63, ../sass/objects/_post-box.scss */
+/* line 73, ../sass/objects/_post-box.scss */
 .more {
   display: block;
   margin: 1em 0;
 }
-/* line 67, ../sass/objects/_post-box.scss */
+/* line 77, ../sass/objects/_post-box.scss */
 .more .icon {
   padding-left: .3em;
   position: relative;
@@ -832,7 +843,7 @@ header .main-form {
   left: 0;
 }
 
-/* line 76, ../sass/objects/_post-box.scss */
+/* line 86, ../sass/objects/_post-box.scss */
 .post-entry figure {
   width: 35%;
   height: 300px;
@@ -843,24 +854,24 @@ header .main-form {
   /* stops bg color from leaking outside the border: */
   box-shadow: 1px 1px 3px 2px #ccc;
 }
-/* line 83, ../sass/objects/_post-box.scss */
+/* line 93, ../sass/objects/_post-box.scss */
 .post-entry figure.left {
   margin: 0 2em 1.5em 0;
 }
-/* line 87, ../sass/objects/_post-box.scss */
+/* line 97, ../sass/objects/_post-box.scss */
 .post-entry figure.right {
   margin: 1.5em 0 1.5em 2em;
 }
-/* line 91, ../sass/objects/_post-box.scss */
+/* line 101, ../sass/objects/_post-box.scss */
 .post-entry figure img {
   min-width: 100%;
 }
-/* line 95, ../sass/objects/_post-box.scss */
+/* line 105, ../sass/objects/_post-box.scss */
 .post-entry p {
   margin-bottom: 1em;
 }
 @media only screen and (max-width: 49.92857em) {
-  /* line 99, ../sass/objects/_post-box.scss */
+  /* line 109, ../sass/objects/_post-box.scss */
   .post-entry figure.left, .post-entry figure.right {
     float: none;
     display: block;
