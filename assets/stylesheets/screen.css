@@ -760,7 +760,7 @@ header .main-form {
 /* line 5, ../sass/objects/_post-box.scss */
 .post-box {
   border-bottom: 1px solid #e7e9ec;
-  padding: .5em 1em 1em 0;
+  padding: .5em 1em 2em 0;
   margin-bottom: 2em;
 }
 /* line 10, ../sass/objects/_post-box.scss */
