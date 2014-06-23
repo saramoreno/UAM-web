@@ -748,6 +748,10 @@ header .main-form {
   header .title {
     width: 100%;
   }
+  /* line 33, ../sass/objects/_header.scss */
+  header .main-form {
+    width: 100%;
+  }
 }
 
 /*------------------------------------------*\
